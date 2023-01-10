@@ -1,5 +1,7 @@
 import React from 'react'
+import cn from 'classnames';
 import { Cell, VerifyCodeProps } from '../types'
+import '../styles/index.css'
 
 export function VerifyCode(props: VerifyCodeProps) {
   const { count, onComplete, containerClassName, cellClassName } = props
@@ -64,14 +66,14 @@ export function VerifyCode(props: VerifyCodeProps) {
     [cells, onChange],
   )
   return (
-    <div className={`verify-code__cells-container ${containerClassName}`}>
+    <div className={cn('verify-code__cells-container', containerClassName)}>
       {Object.values(cells).map((cell) => (
         <input
           key={cell.key}
           ref={cell.ref}
           data-id={cell.id}
           onKeyDown={onCellFilled}
-          className={`verify-code__cell ${cellClassName}`}
+          className={cn('verify-code__cell', cellClassName)}
         />
       ))}
     </div>

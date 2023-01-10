@@ -6,7 +6,7 @@
     "start": "parcel src/index.html"
   },
   "devDependencies": {
-    "339rama-react-verify-code": "^2.0.1",
+    "339rama-react-verify-code": "^2.0.3",
     "@types/react": "^17.0.52",
     "@types/react-dom": "^17.0.18",
     "parcel": "^2.8.2",

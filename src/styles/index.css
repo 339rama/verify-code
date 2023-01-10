@@ -1,0 +1,14 @@
+.verify-code__cells-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+  
+.verify-code__cell {
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 4px;
+    width: 30px;
+    height: 40px;
+    font-size: 32px;
+}

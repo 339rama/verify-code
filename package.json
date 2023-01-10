@@ -1,9 +1,9 @@
 {
   "name": "339rama-react-verify-code",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "",
   "scripts": {
-    "build": "microbundle --jsx React.createElement",
+    "build": "microbundle --jsx React.createElement --css",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
     "test": "echo \"Error: no test specified\" && exit 0",
@@ -21,6 +21,7 @@
     "@types/react": "^17.0.52",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
+    "classnames": "^2.3.2",
     "eslint": "^8.31.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -43,6 +44,7 @@
   },
   "files": [
     "dist",
+    "dist/*.css",
     "LICENSE",
     "README.md"
   ],
