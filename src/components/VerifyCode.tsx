@@ -2,7 +2,7 @@ import React from 'react'
 import { Cell, VerifyCodeProps } from '../types'
 
 export function VerifyCode(props: VerifyCodeProps) {
-  const { count, onComplete } = props
+  const { count, onComplete, containerClassName, cellClassName } = props
   const cells: Record<string, Cell> = React.useMemo(() => {
     return new Array(count)
       .fill(undefined)
@@ -64,14 +64,14 @@ export function VerifyCode(props: VerifyCodeProps) {
     [cells, onChange],
   )
   return (
-    <div className='cells-container'>
+    <div className={`verify-code__cells-container ${containerClassName}`}>
       {Object.values(cells).map((cell) => (
         <input
           key={cell.key}
           ref={cell.ref}
           data-id={cell.id}
           onKeyDown={onCellFilled}
-          className='cell'
+          className={`verify-code__cell ${cellClassName}`}
         />
       ))}
     </div>
