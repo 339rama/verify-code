@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import VerifyCode from '339rama-react-verify-code'
-import '339rama-react-verify-code/dist/index.css';
+import '339rama-react-verify-code/dist/index.css'
 
 ReactDOM.render(
   <React.StrictMode>
